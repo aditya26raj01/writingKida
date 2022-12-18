@@ -17,7 +17,7 @@ app.use("/api/auth", auth);
 app.use("/api/blog", blog);
 
 app.listen(5000, (req, res) => {
-    mongoose.connect("mongodb+srv://adityaraj26:adityaraj26@cluster0.xqn50ci.mongodb.net/?retryWrites=true&w=majority", () => {
+    mongoose.connect("mongoURI", () => {
         console.log("Connected to Mongo!");
     })
     console.log("App is listening on http://localhost:5000");
